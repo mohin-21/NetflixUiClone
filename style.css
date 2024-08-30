@@ -1,0 +1,369 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color:white;
+    background-color: #000;
+    box-sizing: border-box;
+  
+}
+
+.header-content{
+    width: 100%;
+    height: 95vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resourses/background.jpg);
+    background-size: cover;
+}
+
+
+.navbar{
+    width: 75%;
+    height: 7%;
+    padding: 1rem 3rem;
+    margin: 0rem 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.navbar .Signin{
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    color:white; 
+    font-weight: 700;
+}
+
+.logo{
+    width:25%;
+    height:80px; 
+}
+
+.logo-img{
+    width: 70%;
+    height: 100%;
+    image-resolution: 4000;
+}
+
+.middle{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.middle p{
+    text-align: center;
+    font-size: 30px;
+    margin:1rem 0rem 0rem;
+}
+
+.email-form{
+    text-align: center;
+    width: 100%;
+}
+
+.inp{
+    height: 55px;
+    width: 28%;
+    border-radius: 5px;
+    background-color:rgb(0, 0, 0, 0.5);
+    border:none; 
+    border:0.1px solid gray;
+    color:gray;
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+
+.strd-btn{
+    height: 58px;
+    min-width: 12%;
+    background-color: red;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    font-weight: 700;
+    font-size: 1.1rem;
+} 
+
+.bottom-line{
+    background-color: gray;
+    width: 100%;
+    height: 5px;
+}
+
+/* Featueres */
+
+/* style for every vertical-box */
+.vertical-box{
+    width:70%;
+    padding: 50px 12%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-col, .img-col{
+    width: 50%;
+    
+    
+}
+
+ .text-col h2, .question h2{
+    font-size: 2.3rem;
+    font-weight:900;
+    flex: 1;
+}
+
+.text-col p{
+    margin-top:1rem ;
+    font-size:1.3rem;
+    line-height: 2rem;
+}
+
+
+.img-col img{
+    height: 400px;
+    width:100%;
+    
+}
+
+/* FAQ Part */
+.question{
+    width: 100%;
+    padding: 72px 0px;
+    text-align: center;
+}
+
+.all-q-btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    max-width: 80%;
+    margin-bottom: 3.5rem;
+}
+
+.collapsible {
+    background-color: rgb(60, 57, 57,0.7);
+    color:#fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    /* text-align: left; */
+    outline: none;
+    font-size:1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+
+.collapsible:hover {
+    background-color: rgb(60, 57, 57,0.9);
+}
+
+.collapsible:after {
+    content: "\002B"; /* Unicode character for "plus" sign (+) */
+    font-size: 2.5rem;
+   
+}
+
+.active:after {
+    content: "\2613"; /* Unicode character for "minus" sign (-) */
+    font-size: 1.7rem;
+  }
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  margin-top: 0.1rem;
+  padding: 0 18px;
+  background-color: rgb(40, 36, 36);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size:1.7rem;
+  text-align:left;
+}
+
+/* third part */
+.footer{
+    width: 90%;
+    margin: 72px 16px;
+    padding: 0px 32px;
+    color: gray;
+}
+
+.foot-panel1{
+    width:80%;
+    padding-left: 7.2rem;
+}
+
+.foot-panel1 a, li a{
+    color: gray;
+}
+
+.foot-link{
+    width: 100%;
+    margin-bottom: 1rem;
+   
+}
+
+.footer ul{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6.5rem;
+}
+
+ul li{
+    margin: 16px 0px 0px 12px;
+    min-width:20%;
+    height: 20px;
+    list-style: none;
+}
+
+.foot-panel2{
+    margin-bottom: 1rem;
+    
+}
+
+.foot-panel2 select{
+    color: gray;
+    font-weight: 800;
+    padding: 0.5rem 1.5rem;
+    background-color:rgb(0, 0, 0, 0.3) ;
+    border-radius: 5px;
+}
+
+
+/* Media query */
+@media only screen and (max-width: 650px){
+    .navbar{
+        width: 80%;
+        height: 40px;
+        padding: 24px;
+        margin: 0px;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo-img{
+        width:100px;
+        height: 100%;
+        
+    }
+    
+    .middle{
+        width: 90%;
+        position: relative;
+        bottom: -180px;
+       
+    }
+
+    .middle h1{
+        font-size: 2rem;
+    }
+
+    .middle p{
+        font-size: 1rem;
+    }
+    
+    .email-form h3{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .inp{
+        width: 80%;
+        height: 45px;
+        margin-bottom: 0.5rem;
+    }
+    .strd-btn{
+        font-size: 1rem;
+        width: 35%;
+        height: 45px;
+    }
+
+    .vertical-box{
+        font-size: 15px;
+        padding: 10px 4px;
+        width: 98%;
+    }
+    .text-col, .img-col{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-col img{
+        height: 70%;
+        width: 100%;
+    }
+
+    .text-col h2{
+        font-size: 2rem;
+    }
+
+    .text-col p{
+        font-size: 1.2rem ;
+    }
+
+    .box2, .box4{
+       flex-direction: column-reverse;
+    }
+
+    .question h2{
+        font-size: 20px;
+    }
+
+    .collapsible{
+        font-size: 1.2rem;
+    }
+
+    .content{
+        font-size: 1.2rem;
+    }
+
+    .footer{
+        padding: 0 10px;
+        width: 85%;
+        
+    }
+
+    .foot-panel1{
+        padding-left: 0.5rem;
+    }
+    .footer ul{
+        width: 100%;
+        padding: 0;
+    
+}
+    ul li{
+        width: 45%;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
